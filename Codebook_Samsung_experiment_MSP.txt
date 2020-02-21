@@ -1,0 +1,12 @@
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the experiment captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+In the data frame "final_data" there are 82 variables. 
+The first variable is the "subjectId" for the subject which participated in the experiment. There are 30 subjects
+The second variable is one of the activity out of six -(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+Last column, datatype, is an identification whether the subject was a test subject or train subject
+The other 79 columns are the variables with readings pertaining to mean or standard deviation pertaining to total acceleration, body acceleration and gyro in three planes - X,Y and Z.The original variable names have been retained.
+In the tidy data file "Samsung_mean_data_MSP.txt", the "datatype" is dropped. The variable names are also the same and the reading is a mean subject and activity wise.
+The variables preficed with t are a measurement in time domain in seconds and those prefixed with f are in Hz, a fourier trnasform in frequenct domain.
